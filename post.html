@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shobjob</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar">
+            <div class="container px-5">
+                <h2 class="s">Shob</h2>
+                <h2 class="j">Job</h2>
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"style="color:#000000" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"style="color:#000000" href="alljobs.html">All Jobs</a></li>
+                       
+                       
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user"></i>Login</button>
+                        &nbsp&nbsp&nbsp&nbsp
+                        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><i class="fa fa-user-plus"></i>SignUp</button>
+                        
+                        
+                        
+                        <div id="id01" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                              </div>
+                          
+                              <div class="c1">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                <button type="submit">Login</button>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                              
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id01');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                          </script>
+                        <!-- <button class="btn"button style="margin:5px;"href="login.html"><i class="fa fa-user"></i> Login</button>
+                            <button class="btn"button style="margin:5px;"href="#!"><i class="fa fa-user-plus"></i> Signup</button>
+                             <li class="nav-item"><a class="nav-link"style="color: #000;" href="login.html"><i class="fa fa-user"></i>Login</a></li>
+                        <li class="nav-item"><a class="nav-link"style="color: #000;" href="login.html"><i class="fa fa-user-plus"></i>SignUp</a></li>
+                        -->
+                        <div id="id02" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                              </div>
+                          
+                              <div class="c1">
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter email" name="email" required>
+
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <label for="cpsw"><b>Confirm Password</b></label>
+                                <input type="password" placeholder="Retype Password" name="cpsw" required>
+                                  
+                                <button type="submit">SignUp</button>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                              
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id02');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                          </script>
+
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+          </head>
+          <body>
+            <div class="container">
+          <h3>terms and condition here!</h3>
+          <p>I walk a lonely road
+              The only one that I have ever known
+              Don't know where it goes
+              But it's home to me, and I walk alone
+              I walk this empty street
+              On the Boulevard of Broken Dreams
+              Where the city sleeps
+              And I'm the only one, and I walk alone
+              I light the fuse
+              And i watch it burn
+              And somewhere deep inside i know there's a lesson to be learned
+              It's not the crime but the way that we pay for
+              Feelings unmutual
+              You go upstairs
+              And i hang my head
+              Somebody said i let myself down as i crawled into bed
+              I wandered why the hell i'd ever paid for
+              Feelings unmutual
+              I'm tired of living in the shadows
+              I light the fuse
+              And i watch it burn
+              And somewhere deep inside i know there's a lesson to be learned
+              It's not the crime but the way that we pay for
+              Feelings unmutual
+              You go upstairs
+              And i hang my head
+              Somebody said i let myself down as i crawled into bed
+              I wandered why the hell i'd ever paid for
+              Feelings unmutual
+              I'm tired of living in the shadows
+              These paper walls i can't break through
+              I'm sick of standing by your window
+              Tracing silhouettes of you
+              But when it gets dark
+              You light the spark
+              And all the lies i tried to live by start falling apart
+              Whoever knew that it could be so painful
+              Feelings unmutual
+              Now i can't escape
+              These things i've done
+              But my anxieties have promised me the worst is to come
+              So give up living for the life that you paid for
+              Feelings unmutual have won
+              I'm tired of living in the shadows
+              These paper walls i can't break through
+              I'm sick of standing by your window
+              Tracing silhouettes of you
+              Tracing silhouettes of you
+              Tracing silhouettes of you
+              Tracing silhouettes of you
+              Tracing silhouettes of you
+              I light the fuse
+              And i watch it burn
+              And somewhere deep inside i know there's a lesson to be learned
+              It's not the crime but the way that we pay for
+              Feelings unmutual</p>
+          <label>
+              <input type="checkbox" checked="checked" name="agreed"> I Agree To The Terms And Condition!
+          
+            </label>
+          
+          <br><button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Post A Job</button>
+          
+          <div id="id03" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php" method="post">
+          
+              <div class="c1">
+                <label for="cname"><b>Company name</b></label>
+                <input type="text" placeholder="Enter company name" name="cname" required>
+          
+                <label for="req"><b>requirement</b></label>
+                <input type="text" placeholder="Enter candidate Requirement" name="req" required>
+
+                <label for="rem"><b>Remuneration</b></label>
+                <input type="text" placeholder="Enter Remuneration ammount" name="rem" required>
+                  
+                <button type="submit">Post</button>
+          
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id03');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
+
+<footer class="py-5 bg-dark">
+  <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+
+
+        </body>
+        </html>
